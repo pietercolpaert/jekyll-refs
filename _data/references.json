@@ -1,0 +1,24 @@
+{
+  "@context" : {
+    "schema" : "http://schema.org",
+    "publisher" : "http://purl.org/dc/terms/publisher",
+    "title" : "http://purl.org/dc/terms/title",
+    "pageEnd":"http://purl.org/ontology/bibo/pageEnd",
+    "pageStart":"http://purl.org/ontology/bibo/pageStart",
+    "volume":"http://purl.org/ontology/bibo/volume"
+  },
+  "@graph" : [
+    {
+      "@id" :"https://tools.ietf.org/html/rfc4180",
+      "title" : "Common Format and <abbr>mime</abbr> Type for <abbr>csv</abbr> Files",
+      "organization" : {
+        "@id" : "http://www.wikidata.org/entity/Q217082",
+        "name" : "Internet Engineering Task-Force"
+      },
+      "publisher" : "<abbr>ietf</abbr>",
+      "month":10,
+      "year": 2005,
+      "authors" : [ "Y. Shafranovich" ]
+    }
+  ]
+}

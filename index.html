@@ -1,0 +1,68 @@
+---
+---
+<html prefix="schema: http://schema.org/">
+  <head>
+    <title>Example jekyll paper with bibliographic references</title>
+    <link rel="stylesheet" href="https://dokie.li/media/css/lncs.css" title="LNCS"/> <!-- Thank you csarven! -->
+    <style>
+      abbr {
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>An easy as pie jekyll plug-in for creating bibliographic references the Linked Research way</h1>
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <div datatype="rdf:HTML" property="schema:abstract">
+          <p>
+            Linked Research is the new black. A paper written in PDF is so last century.
+            With Linked Research, you can create much richer references to other articles, which this plug-in is intended for.
+            
+          </p><p>
+            Afraid that your references won't be indexed by the common crawlers today?
+            No worries, thanks to the fact that we just print normal references anyway, this should not be a problem.
+            However, the crawlers really should learn how to use Linked Data, and the more of us that will start annotating or papers with Linked Data the more this will start happening.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Jekyll is a static site generator. It allows you to program a couple of rules in order to generate your HTML pages.
+        </p>
+        <p>
+          Bibliographic references in [RDFa](https://en.wikipedia.org/wiki/RDFa) using the [cito vocabulary](http:/purl.org/spar/cito/) and the [bibo ontology](http://purl.org/ontology/bibo/)
+        </p><p>
+This makes sure you can write papers, blog posts or books in HTML using jekyll to generate the references for you by describing the references once in a [JSON-LD](http://json-ld.org) file.
+
+        </p>
+      </section>
+      <section>
+        <h2>Related work</h2>
+        This related work also tries to take <a href="https://linkedresearch.org/">Linked Research</a> to the next level:
+        <ul>
+          <li><a href="https://dokie.li/">dokieli</a> - an amazing editor that even has 
+          <li><a href="https://github.com/essepuntato/rash">RASH</a> - using these stylesheets and javascript, you will be able to generate LNCS and ACM template without any issues.
+        </ul>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <p>
+          See <a href="https://github.com/pietercolpaert/jekyll-refs">the README.md on our github repository</a> to see it in action.
+        </p>
+      </section>
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          We can now have references that work on the web with a similar convenience to the latex workflow.
+          e.g., check out us citing the {% sc citesAsAuthority https://tools.ietf.org/html/rfc4180 %}<abbr title="Comma-Separated Values">csv</abbr> spec{% ec %}.
+        </p>
+      </section>
+      <div id="references">
+        {% references %}
+      </div>
+    </article>
+  </body>
+</html>
