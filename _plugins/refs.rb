@@ -83,7 +83,7 @@ module Jekyll
         authors = document["authors"]
         publisher = document["publisher"] || ""
         # RDFa annotated string
-        references[document["@id"]] = "<span property=\"dct:creator\">" + authors.join('</span>, <span property=\"dct:creator\">') + "</span>: ``<a href=\"#{document['@id']}\"><cite property=\"dct:title\">" + document["title"] + "</cite></a>'', #{publisher} (<span property=\"dcterms:created\">#{document["year"]}</span>)"
+        references[document["@id"]] = "<span property=\"dct:creator\">" + authors.join('</span>, <span property="dct:creator">') + "</span>: ``<a href=\"#{document['@id']}\"><cite property=\"dct:title\">" + document["title"] + "</cite></a>'', #{publisher} (<span property=\"dcterms:created\">#{document["year"]}</span>)"
       end
 
       if CitationStartTag.citations[page]
